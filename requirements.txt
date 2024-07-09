@@ -1,4 +1,5 @@
-git+https://github.com/vpcreatz/pyrofork-adv
+flask==2.2.2
+gunicorn==20.1.0
 tgcrypto
 motor
 marshmallow
