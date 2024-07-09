@@ -102,9 +102,9 @@ WELCOME = is_enabled('WELCOME', False)
 PROTECT_CONTENT = is_enabled('PROTECT_CONTENT', False)
 LONG_IMDB_DESCRIPTION = is_enabled("LONG_IMDB_DESCRIPTION", False)
 LINK_MODE = is_enabled("LINK_MODE", False)
-AUTO_FILTER = is_enabled('AUTO_FILTER', True)
-IMDB = is_enabled('IMDB', True)
-SPELL_CHECK = is_enabled("SPELL_CHECK", True)
+AUTO_FILTER = is_enabled('AUTO_FILTER', False)
+IMDB = is_enabled('IMDB', False)
+SPELL_CHECK = is_enabled("SPELL_CHECK", False)
 SHORTLINK = is_enabled('SHORTLINK', False)
 
 #premium info
@@ -119,7 +119,7 @@ if len(BIN_CHANNEL) == 0:
     exit()
 else:
     BIN_CHANNEL = int(BIN_CHANNEL)
-URL = environ.get("URL", "")
+URL = environ.get("URL", "https://auto-filter-bot-gplo.onrender.com")
 if len(URL) == 0:
     print('Error - URL is missing, exiting now')
     exit()
